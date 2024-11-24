@@ -1,0 +1,19 @@
+header {
+  background-color: $color-white;
+
+  &::before {
+    display: none;
+  }
+
+  .show-share {
+    width: 25% !important;
+  }
+}
+
+@include media-breakpoint-md {
+  header {
+    .show-share {
+      width: auto !important;
+    }
+  }
+}
